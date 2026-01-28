@@ -7,7 +7,7 @@ export default defineConfig(({ mode }) => {
 
   return {
     // ✅ REQUIRED for GitHub Pages
-    base: "/F1-Portfolio/",
+    base: "/F1-portfolio/",
 
     server: {
       port: 3000,
