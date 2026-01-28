@@ -1,38 +1,61 @@
 <div align="center">
-<img width="1200" height="475" alt="GHBanner" src="/public/github readme.png" />
+  <img width="1200" height="475" alt="F1 Portfolio Banner" src="/public/github readme.png" />
 </div>
 
-# F1-Portfolio — Built by Aman Das
+# F1 Portfolio — Engineered by Aman Das
 
-This repository contains a custom-built portfolio designed and developed by me.  
-The project focuses on clean code structure, modern frontend practices,  a smooth and responsive user experience.
+A performance-driven developer portfolio inspired by the precision, speed, and efficiency of Formula 1.  
+This project reflects my approach to software engineering: **clean architecture, optimized interactions, and purposeful design**.
 
-To experience it ---> https://unluckycoder69.github.io/F1-portfolio/
+🔗 **Live Preview:**  
+https://unluckycoder69.github.io/F1-portfolio/
+
 ---
 
-## 🚀 Overview
-- Fully developed and maintained by **Aman Das**
-- Clean, modular architecture
-- Responsive and modern UI
-- AI-driven functionality integrated into the application flow
+## 🚀 Project Overview
+
+F1 Portfolio is a custom-built personal website designed and developed entirely by me.  
+It showcases my projects, skills, and engineering mindset through a high-performance UI with smooth animations and modern frontend patterns.
+
+**Core focus areas:**
+- Performance-first development
+- Clean and maintainable codebase
+- Responsive, immersive user experience
+- Thoughtful UI interactions inspired by real-world systems
+
+---
+
+## ✨ Key Highlights
+
+- Fully designed and implemented by **Aman Das**
+- Modular, scalable component architecture
+- Smooth animations and transitions using motion principles
+- Optimized asset handling for production deployment
+- Responsive layout across devices
 
 ---
 
 ## 🛠 Tech Stack
-- **Frontend:** React  
-- **Backend / AI Integration:** Node.js  
-- **Environment Management:** dotenv  
-- **Package Manager:** npm  
+
+- **Frontend:** React (Vite)
+- **Animations:** Framer Motion
+- **Icons:** Lucide React
+- **Styling:** Tailwind CSS
+- **Tooling:** TypeScript, npm
+- **Deployment:** GitHub Pages
 
 ---
 
 ## ▶️ Run Locally
 
 ### Prerequisites
-- Node.js installed on your system
+- Node.js (v18 or above recommended)
+- npm
 
-### Setup Instructions
-1. Clone the repository  
-   ```bash
-   git clone <your-repo-url>
-   cd <project-folder>
+### Setup
+
+```bash
+git clone https://github.com/unluckycoder69/F1-portfolio.git
+cd F1-portfolio
+npm install
+npm run dev
