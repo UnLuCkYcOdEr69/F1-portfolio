@@ -88,22 +88,37 @@ const Hero: React.FC<HeroProps> = ({ speed, scrollYProgress }) => {
         </motion.p>
 
         {/* CTA Buttons */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.5 }}
-          className="flex flex-col sm:flex-row gap-5 justify-center w-full sm:w-auto mb-8"
-        >
-          <button className="group relative px-10 py-4 bg-red-600 text-white f1-font overflow-hidden transition-all hover:pr-14 hover:scale-105 active:scale-95 shadow-xl shadow-red-600/40">
-            <span className="relative z-10 flex items-center gap-3 font-black italic text-base uppercase">
-              VIEW PROJECTS <Zap className="w-5 h-5" fill="currentColor" />
-            </span>
-            <div className="absolute top-0 right-0 h-full w-0 group-hover:w-12 bg-black/20 transition-all" />
-          </button>
-          <button className="px-10 py-4 border-2 border-white/20 text-white f1-font hover:bg-white hover:text-black hover:border-white transition-all hover:scale-105 active:scale-95 font-black italic text-base uppercase">
-            HIRE DRIVER
-          </button>
-        </motion.div>
+<motion.div
+  initial={{ opacity: 0, y: 20 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ delay: 0.5 }}
+  className="flex flex-col sm:flex-row gap-5 justify-center w-full sm:w-auto mb-8"
+>
+  {/* VIEW PROJECTS — Smooth scroll to Garage */}
+  <button
+    onClick={() => {
+      document
+        .getElementById("garage")
+        ?.scrollIntoView({ behavior: "smooth", block: "start" });
+    }}
+    className="group relative px-10 py-4 bg-red-600 text-white f1-font overflow-hidden transition-all hover:pr-14 hover:scale-105 active:scale-95 shadow-xl shadow-red-600/40"
+  >
+    <span className="relative z-10 flex items-center gap-3 font-black italic text-base uppercase">
+      VIEW PROJECTS <Zap className="w-5 h-5" fill="currentColor" />
+    </span>
+    <div className="absolute top-0 right-0 h-full w-0 group-hover:w-12 bg-black/20 transition-all" />
+  </button>
+
+  {/* HIRE DRIVER — Resume download */}
+  <a
+    href={`${import.meta.env.BASE_URL}AmanDas_Resume.pdf`}
+    download
+    className="px-10 py-4 border-2 border-white/20 text-white f1-font hover:bg-white hover:text-black hover:border-white transition-all hover:scale-105 active:scale-95 font-black italic text-base uppercase text-center"
+  >
+    HIRE DRIVER
+  </a>
+</motion.div>
+
       </div>
 
       {/* Scroll Indicator */}
